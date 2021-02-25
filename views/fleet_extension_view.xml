@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="fleet_extension_form_inherit" model="ir.ui.view">
+            <field name="name">fleet_extension.form.inherit</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='car_value']" position="after">
+                    <field name="pin_card"/>
+                </xpath>
+
+                <xpath expr="//field[@name='color']" position="after">
+                    <field name="vignette"/>
+                    <field name="vignette_date"/>
+                </xpath>
+
+                <xpath expr="//group/group[2]" position="inside">
+                    <field name="wheel_size"/>
+                    <field name="fire_extinguisher_date"/>
+                    <field name="technical_review"/>
+                    <field name="spare_wheel"/>
+                    <field name="pressure_sensor"/>
+                </xpath>
+
+                <xpath expr="//group" position="after">
+                    <group name='insurance-leasing' col="2">
+                        <group string="Insurance">
+    <!--                      <field name="insurance_company"/>-->
+    <!--                      <field name="insurance_date"/>-->
+                          <field name="insurance_number"/>
+                        </group>
+                        <group string="Leasing">
+                          <field name="leasing_company"/>
+                          <field name="leasing_date"/>
+                        </group>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
