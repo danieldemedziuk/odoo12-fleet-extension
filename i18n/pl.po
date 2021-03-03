@@ -1,0 +1,99 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fleet_extension
+#
+# Translators:
+# DanielDemedziuk <daniel.demedziuk@gmail.pl>, 2021
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-26 10:26+0000\n"
+"PO-Revision-Date: 2021-02-26 10:26+0000\n"
+"Last-Translator: DanielDemedziuk <daniel.demedziuk@gmail.pl>, 2021\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__pin_card
+msgid "Card PIN"
+msgstr "Kod PIN Orlen"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__technical_review
+msgid "Date of technical inspection"
+msgstr "Data przeglądu technicznego"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__insurance_date
+msgid "End date of insurance"
+msgstr "Ważność ubezpieczenia"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__fire_extinguisher_date
+msgid "Expiration date of fire extinguisher"
+msgstr "Ważność gaśnicy"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__vignette_date
+msgid "Expiration date of the vignette"
+msgstr "Ważność winiety"
+
+#. module: fleet_extension
+#: model_terms:ir.ui.view,arch_db:fleet_extension.fleet_extension_form_inherit
+msgid "Insurance"
+msgstr "Ubezpieczenie"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__insurance_company
+msgid "Insurance company"
+msgstr "Firma ubezpieczeniowa"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__insurance_number
+msgid "Insurance policy number"
+msgstr "Numer polisy ubezpieczeniowej"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__leasing_date
+msgid "Leasing expiration date"
+msgstr "Ważność leasingu"
+
+#. module: fleet_extension
+#: model_terms:ir.ui.view,arch_db:fleet_extension.fleet_extension_form_inherit
+msgid "Leasing"
+msgstr ""
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__leasing_company
+msgid "Leasing company"
+msgstr "Firma leasingowa"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__pressure_sensor
+msgid "Pressure sensor"
+msgstr "Czujnik ciśnienia"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__spare_wheel
+msgid "Spare wheel"
+msgstr "Koło zapasowe"
+
+#. module: fleet_extension
+#: model:ir.model,name:fleet_extension.model_fleet_vehicle
+msgid "Vehicle"
+msgstr "Pojazd"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__vignette
+msgid "Vignette"
+msgstr "Winieta"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__wheel_size
+msgid "Wheel size"
+msgstr "Rozmiar opon"
+
