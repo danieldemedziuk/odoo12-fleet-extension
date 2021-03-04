@@ -31,6 +31,18 @@ class fleet_extension_model(models.Model):
                     'category': 'contract'
                 })
 
+            if not self.env['fleet.service.type'].search([('category', '=', 'contract'), ('name', '=', 'Leasing')]):
+                self.env['fleet.service.type'].create({
+                    'name': 'Leasing',
+                    'category': 'contract'
+                })
+
+            if not self.env['fleet.service.type'].search([('category', '=', 'contract'), ('name', '=', 'PKN Orlen')]):
+                self.env['fleet.service.type'].create({
+                    'name': 'PKN Orlen',
+                    'category': 'contract'
+                })
+
             veh_log = self.env['fleet.vehicle.log.contract'].search([('active', '=', True), ('cost_subtype_id', '=', 'Insurance'), ('state', '=', 'open'), ('vehicle_id', '=', rec.name)])
 
             if len(veh_log) == 1:
