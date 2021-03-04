@@ -25,7 +25,13 @@ class fleet_extension_model(models.Model):
 
     def set_insurance_info(self):
         for rec in self:
-            veh_log = self.env['fleet.vehicle.log.contract'].search([('active', '=', True), ('state', '=', 'open'), ('vehicle_id', '=', rec.name)])
+            if not self.env['fleet.service.type'].search([('category', '=', 'contract'), ('name', '=', 'Insurance')]):
+                self.env['fleet.service.type'].create({
+                    'name': 'Insurance',
+                    'category': 'contract'
+                })
+
+            veh_log = self.env['fleet.vehicle.log.contract'].search([('active', '=', True), ('cost_subtype_id', '=', 'Insurance'), ('state', '=', 'open'), ('vehicle_id', '=', rec.name)])
 
             if len(veh_log) == 1:
                 rec.insurance_date = veh_log['expiration_date']
