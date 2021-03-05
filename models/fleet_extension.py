@@ -22,6 +22,7 @@ class fleet_extension_model(models.Model):
     pressure_sensor = fields.Boolean(string='Pressure sensor', help='Does it exist in the car.')
     vignette = fields.Char(string='Vignette')
     vignette_date = fields.Date(string='Expiration date of the vignette')
+    new = fields.Char()
 
     def set_insurance_info(self):
         for rec in self:
