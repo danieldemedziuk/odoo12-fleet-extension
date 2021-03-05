@@ -3,13 +3,13 @@
 #	* fleet_extension
 #
 # Translators:
-# DanielDemedziuk <daniel.demedziuk@gmail.pl>, 2021
+# DanielDemedziuk <daniel.demedziuk@gmail.pl>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 12.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-26 10:26+0000\n"
-"PO-Revision-Date: 2021-02-26 10:26+0000\n"
+"POT-Creation-Date: 2021-03-04 10:28+0000\n"
+"PO-Revision-Date: 2021-03-04 10:28+0000\n"
 "Last-Translator: DanielDemedziuk <daniel.demedziuk@gmail.pl>, 2021\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 #. module: fleet_extension
 #: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__pin_card
 msgid "Card PIN"
-msgstr "Kod PIN Orlen"
+msgstr "Kod PIN karty"
 
 #. module: fleet_extension
 #: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__technical_review
@@ -58,11 +58,6 @@ msgid "Insurance policy number"
 msgstr "Numer polisy ubezpieczeniowej"
 
 #. module: fleet_extension
-#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__leasing_date
-msgid "Leasing expiration date"
-msgstr "Ważność leasingu"
-
-#. module: fleet_extension
 #: model_terms:ir.ui.view,arch_db:fleet_extension.fleet_extension_form_inherit
 msgid "Leasing"
 msgstr ""
@@ -71,6 +66,11 @@ msgstr ""
 #: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__leasing_company
 msgid "Leasing company"
 msgstr "Firma leasingowa"
+
+#. module: fleet_extension
+#: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__leasing_date
+msgid "Leasing expiration date"
+msgstr "Ważność leasingu"
 
 #. module: fleet_extension
 #: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__pressure_sensor
@@ -96,4 +96,3 @@ msgstr "Winieta"
 #: model:ir.model.fields,field_description:fleet_extension.field_fleet_vehicle__wheel_size
 msgid "Wheel size"
 msgstr "Rozmiar opon"
-

@@ -24,6 +24,7 @@ email: daniel.demedziuk@gmail.com
     'depends': ['base', 'mail', 'fleet'],
     'data': [
         'views/fleet_extension_view.xml',
+        'views/vehicle_odometer_log_view.xml',
         ],
     'auto_install': False,
     'application': True,

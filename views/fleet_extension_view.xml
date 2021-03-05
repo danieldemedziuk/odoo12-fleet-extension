@@ -51,7 +51,9 @@
                 <xpath expr="//field[@name='model_id']" position="after">
                     <field name="insurance_date"/>
                     <field name="technical_review"/>
+
                 </xpath>
+
             </field>
         </record>
 

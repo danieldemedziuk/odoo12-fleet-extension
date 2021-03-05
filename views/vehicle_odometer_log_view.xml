@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="vehicle_odometer_tree_inherit" model="ir.ui.view">
+            <field name="name">vehicle.odometer.tree.inherit</field>
+            <field name="model">fleet.vehicle.odometer</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_odometer_view_tree"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='data']" position="after">
+                    <field name="date_"/>
+                    <field name="technical_review"/>
+
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>
