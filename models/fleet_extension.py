@@ -23,7 +23,7 @@ class fleet_extension_model(models.Model):
     vignette = fields.Char(string='Vignette')
     vignette_date = fields.Date(string='Expiration date of the vignette')
     new = fields.Char()
-    g
+
     def set_insurance_info(self):
         for rec in self:
             if not self.env['fleet.service.type'].search([('category', '=', 'contract'), ('name', '=', 'Insurance')]):
